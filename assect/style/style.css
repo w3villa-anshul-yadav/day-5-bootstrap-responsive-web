@@ -5,25 +5,27 @@
 
 }
 
-body {
+.first-page,
+.newslatter {
 
     background-color: #ffede9;
 
 }
 
 .navbar-button {
-    border-radius: 8px;
+    border-radius: 10px;
     width: 115px;
-    height: 50px;
+    height: 47px;
     background-color: rgb(60, 6, 208);
     color: white;
 }
 
 .navbar-logo-text {
     color: rgb(69, 6, 208);
-    font-size: 22px;
-    margin: 0;
+    font-size: 20px;
+    margin-left: -15px;
     padding: 0;
+
     font-weight: 900;
 }
 
@@ -52,22 +54,36 @@ body {
 
 .navbar-toggler {
     position: absolute;
-    right: 10vw;
+    right: 12vw;
 }
 
 .get-started-button input {
     width: 180px;
-    height: 60px;
+    height: 55px;
     background-color: rgb(60, 6, 208);
     color: white;
-    border-radius: 12px;
+    outline: none;
+    border-radius: 11px;
+    outline: none;
 
+}
+
+
+
+
+
+
+
+
+
+.main-heading {
+    font-size: 50px;
 }
 
 .rounded-circle {
     width: 90px;
     height: 90px;
-    background-color: rgb(60, 6, 208);
+    background-color: rgb(104, 55, 239);
     border-radius: 10px;
     position: absolute;
     top: 90px;
@@ -128,18 +144,27 @@ br {
     align-items: center;
 }
 
-.student-image img {
-    position: absolute;
+.student-image {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+}
 
-    height: 620px;
+.student-image img {
+
+    position: relative;
+
+    height: 650px;
     object-fit: cover;
-    top: 20px;
+    left: 10%;
+    top: 22px;
+
 }
 
 .square-card-container {
     bottom: 0;
-    margin-top: 125px;
-    margin-left: 105px;
+    margin-top: 145px;
+    margin-left: 95px;
 }
 
 .square-card-text-container {
@@ -156,4 +181,206 @@ br {
     font-weight: bold;
 
     color: rgb(60, 6, 208);
+}
+
+
+
+/* ***************************
+bottom page & mid page 
+*************************** */
+
+.second-page,
+.popular,
+.weprovide,
+{
+background-color: #fffffa;
+}
+
+.square-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.square-icon-card {
+    width: 78px;
+    height: 78px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-icon-card i {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+
+/* second page card container  */
+
+
+.second-page-card-container {
+    height: 380px;
+    width: 345px;
+    border-radius: 17px;
+    background-color: rgb(177, 247, 236);
+    box-shadow: -20px 20px 1px rgb(119, 139, 219)
+}
+
+.extra-width-card-container-rightaligned {
+
+    width: 110%;
+
+    padding-bottom: 0;
+    margin: 10px 110% auto -7px;
+}
+
+.extra-width-card-container-leftaligned {
+
+    width: 110%;
+
+    padding-bottom: 0;
+    margin: 0 50% auto -37px;
+}
+
+.extra-width-card {
+    color: rgb(200, 189, 189);
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    border: none;
+}
+
+.extra-width-card p {
+    line-height: 20px;
+    color: rgb(130, 127, 127);
+    font-size: 12px;
+}
+
+.tiny-text p {
+
+    line-height: 20px;
+    color: rgb(134, 129, 129);
+    font-size: 15px;
+    font-weight: lighter;
+
+}
+
+.extra-width-card strong {
+    font-size: 18px;
+}
+
+.extra-width-card-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.circle-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.card-image {
+    background-color: pink;
+}
+
+
+
+/* popular section  */
+
+.view-all-course-link {
+    text-align: end;
+    position: relative;
+}
+
+.view-all-course-link a {
+    position: absolute;
+    text-decoration: underline;
+    right: 0;
+    bottom: 0;
+    color: rgb(41, 3, 143);
+    text-align: end;
+}
+
+
+
+/* popular card style  */
+
+
+.popular-card-container {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.popular-card img {
+    width: 315px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 70%;
+}
+
+.popular-price-card {
+    margin-bottom: 530px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 2px 2px white, -2px -2px white;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: -50px;
+    height: 130px;
+    padding: 25px;
+    z-index: 1;
+}
+
+
+
+
+
+/* .newsletter  section */
+
+.newslatter-search {
+    display: flex;
+    justify-content: end;
+    margin-right: -80px;
+}
+
+.newslatter-search input {
+    border-radius: 10px;
+    margin-right: -10px;
+    width: 450px;
+
+    border: none;
+    outline: none;
+}
+
+
+
+
+/* about-page */
+
+.about-page-link ul li {
+    list-style-type: none;
+
+}
+
+.about-page-link ul li a {
+    text-decoration: none;
+
+    color: rgb(130, 127, 127);
+}
+
+.about-page-link ul li a:hover {
+    color: blue;
+    list-style-type: none;
+}
+
+
+input[type="button"] {
+    border: none;
 }
