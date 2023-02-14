@@ -1,23 +1,31 @@
-* {
+:root{
+    --pinkish-background:#ffede9;
+    --whitesh-background:#fffffa;
+} 
+*{
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-/* common styles  */
 
+/* common styles  */
+.margin-top-bottom{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 .first-page,
 .newslatter {
 
-    background-color: #ffede9;
+    background-color: var(--pinkish-background);
 
 }
 
 .second-page,
 .popular,
-.weprovide {
-    background-color: #fffffa;
+.weprovide ,.about-page{
+    background-color: var(--whitesh-background);
 }
 
 .tiny-text p {
@@ -32,14 +40,16 @@
 .second-page,
 .popular,
 .weprovide {
-    background-color: #fffffa;
+    background-color: var(--whitesh-background);
 }
 
 
 
 
 /* nav-bar style  */
-
+nav{
+    overflow: hidden;
+}
 .navbar-button {
     border-radius: 10px;
     width: 115px;
@@ -66,6 +76,7 @@
 
 
 }
+ 
 
 #navbarSupportedContent ul li a:hover,
 .navbar-logo-text:hover {
@@ -73,10 +84,12 @@
     text-decoration: none;
 }
 
-#navbarSupportedContent ul {
-
-    margin-right: 20px;
-}
+ .nav-item a{
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    margin-left: 14px;
+    margin-right: 14px;
+ }
 
 
 
@@ -85,7 +98,7 @@
     right: 1px;
 }
 
-.get-started-button input {
+.get-started-button input[type='button'] {
     width: 180px;
     height: 55px;
     background-color: rgb(60, 6, 208);
@@ -189,6 +202,7 @@ br {
     display: flex;
     justify-content: end;
     overflow: hidden;
+    position: relative;
 }
 
 .student-image img {
@@ -205,9 +219,14 @@ br {
 /* main-page square card near student image  */
 
 .square-card-container {
-    bottom: 0;
-    margin-top: 145px;
-    margin-left: 95px;
+    /* bottom: 0; */
+    /* margin-top: 145px; */
+    /* margin-left: 95px; */
+    position: absolute;
+    top:70%;
+    left: -5%;
+
+
 }
 
 .square-card-text-container {
@@ -262,7 +281,9 @@ bottom page & mid page
     height: 380px;
     width: 345px;
     border-radius: 17px;
+    padding: 20px;
     background-color: rgb(177, 247, 236);
+
     box-shadow: -20px 20px 1px rgb(119, 139, 219)
 }
 
@@ -372,17 +393,37 @@ bottom page & mid page
 
 
 /* .newsletter  section */
-
+/* .newslatter-input-button-container{ */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .newslatter-search {
     display: flex;
-    justify-content: end;
+    justify-content: end; 
     margin-right: -80px;
 }
+@media screen and (max-width:880px) {
+    .newslatter-search,.get-started-button {
+        display: flex;
+        justify-content: center; 
+        /* margin-right: -80px; */
+    }
+    .newslatter-search input[type='text'] {
+        border-radius: 10px;
+        /* margin-right: -10px; */
+        width: 340px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        outline: none;
+    }
+}
 
-.newslatter-search input {
+.newslatter-search input[type='text'] {
     border-radius: 10px;
     margin-right: -10px;
-    width: 450px;
+    width: 350px;
 
     border: none;
     outline: none;
