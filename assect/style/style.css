@@ -47,8 +47,9 @@
 
 
 /* nav-bar style  */
-nav{
+.navbar{
     overflow: hidden;
+    /* position: fixed; */
 }
 .navbar-button {
     border-radius: 10px;
@@ -392,12 +393,7 @@ bottom page & mid page
 
 
 
-/* .newsletter  section */
-/* .newslatter-input-button-container{ */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+ 
 .newslatter-search {
     display: flex;
     justify-content: end; 
@@ -407,23 +403,24 @@ bottom page & mid page
     .newslatter-search,.get-started-button {
         display: flex;
         justify-content: center; 
-        /* margin-right: -80px; */
+       
     }
     .newslatter-search input[type='text'] {
         border-radius: 10px;
-        /* margin-right: -10px; */
+    
         width: 340px;
         display: flex;
         justify-content: center;
         border: none;
         outline: none;
     }
+    .
 }
 
 .newslatter-search input[type='text'] {
     border-radius: 10px;
     margin-right: -10px;
-    width: 350px;
+    width: 380px;
 
     border: none;
     outline: none;
@@ -451,6 +448,6 @@ bottom page & mid page
 }
 
 
-input[type="button"] {
+input[type='button'] {
     border: none;
 }
