@@ -262,13 +262,8 @@ br {
   
 
 }
-@media screen and (max-width:420px) {
-    .student-image img{
-        max-width: 350px;
-    height: 598px;
-    top: 206px;
-    }
-}
+
+
 
 /* main-page square card near student image  */
 
