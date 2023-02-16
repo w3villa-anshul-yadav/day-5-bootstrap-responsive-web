@@ -401,6 +401,7 @@ bottom page & mid page
     bottom: 0;
     color: rgb(41, 3, 143);
     text-align: end;
+    margin-right: 9px;
 }
 
 
@@ -446,7 +447,7 @@ bottom page & mid page
 .newslatter-search {
     display: flex;
     justify-content: end; 
-    margin-right: -80px;
+    /* margin-right: -80px; */
 }
 @media screen and (max-width:880px) {
     .newslatter-search,.get-started-button {
@@ -456,25 +457,28 @@ bottom page & mid page
     }
     .newslatter-search input[type='text'] {
         border-radius: 10px;
-        margin-left:38px ;
-        margin-right:20px ;
+        /* margin-left:38px ;
+        margin-right:20px ; */
         width: 320px;
         display: flex;
         justify-content: center;
         border: none;
         outline: none;
     }
-    .newslatter-input-button-container input{
-
-        margin-top: 15px;
+    .newslatter-input-button-container input[type="button"]{
+        margin-top: 12px;
     }
-  
+    
+}
+.newslatter-input-button-container {
+display: flex;
+justify-content: center;
     
 }
 
 .newslatter-search input[type='text'] {
     border-radius: 10px;
-    margin-right: 44px;
+    margin-right: -8px;
     width: 380px;
 
     border: none;
